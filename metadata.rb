@@ -72,3 +72,15 @@ attribute "mongodb/package_version",
   :display_name => "MongoDB package version",
   :description => "Version of the MongoDB package to install",
   :default => nil
+
+attribute "mongodb/enable_directoryperdb",
+  :display_name => "Enable directory per DB",
+  :description => "Use a separate directory for the files of each database"
+
+attribute "mongodb/enable_noprealloc",
+  :display_name => "Enable noprealloc",
+  :description => "Disable data file preallocation"
+
+attribute "mongodb/enable_smallfiles",
+  :display_name => "Enable smallfiles",
+  :description => "Use a smaller initial file size and maximum size"
